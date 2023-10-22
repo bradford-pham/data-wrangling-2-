@@ -10,6 +10,7 @@ output: github_document
 library(tidyverse)
 library(rvest)
 library(httr)
+library(rvest)
 ```
 
 imort NSDUH
@@ -86,6 +87,26 @@ poke_df =
 ```
 
 
+2ND PART
+
+```{r}
+string_vec = c("my", "name", "is", "Brady")
+
+str_detect(string_vec, "Brady")
+str_replace(string_vec, "Brady", "brady")
+```
+
+
+```{r}
+string_vec = c(
+  "i think we all rule for participating",
+  "i think i have been caught",
+  "i think this will be quite fun actually",
+  "it will be fun, i think"
+  )
+
+str_detect(string_vec, "^i think")
+```
 
 
 

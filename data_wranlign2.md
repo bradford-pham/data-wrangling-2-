@@ -31,6 +31,7 @@ library(rvest)
 
 ``` r
 library(httr)
+library(rvest)
 ```
 
 imort NSDUH
@@ -121,3 +122,32 @@ poke_df =
   GET("https://pokeapi.co/api/v2/pokemon/ditto") |>
   content()
 ```
+
+2ND PART
+
+``` r
+string_vec = c("my", "name", "is", "Brady")
+
+str_detect(string_vec, "Brady")
+```
+
+    ## [1] FALSE FALSE FALSE  TRUE
+
+``` r
+str_replace(string_vec, "Brady", "brady")
+```
+
+    ## [1] "my"    "name"  "is"    "brady"
+
+``` r
+string_vec = c(
+  "i think we all rule for participating",
+  "i think i have been caught",
+  "i think this will be quite fun actually",
+  "it will be fun, i think"
+  )
+
+str_detect(string_vec, "^i think")
+```
+
+    ## [1]  TRUE  TRUE  TRUE FALSE
